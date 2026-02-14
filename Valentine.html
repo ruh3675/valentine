@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, My Love!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef, #fecfef, #ff9a9e);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 3em;
+            color: #e91e63;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        .message {
+            font-family:cursive;
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #ad1457;
+            line-height: 1.6;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .heart {
+            position: absolute;
+            color: #e91e63;
+            font-size: 2em;
+            animation: float 3s infinite ease-in-out;
+        }
+        .heart:nth-child(odd) {
+            animation-delay: -1s;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); }
+            50% { transform: translateY(0vh) rotate(180deg); }
+        }
+        .gifs {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .gifs img {
+            width: 150px;
+            height: 150px;
+            margin: 0 10px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 1.2em;
+            color: #880e4f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day, My Love! 💖</h1>
+        <div class="message">
+            <p>You are the light of my life, the beat in my heart, and the smile on my face every day. I love you more than words can say! 
+                <br>
+    Sending you this line as a special dedication and my best wishes.
+            </p> 
+            <br> <audio controls autoplay loop>
+        <source src="./ReelAudio-3066.mp3"  type="audio/mpeg"> <!-- Replace with a romantic song MP3 -->
+        Your browser does not support the audio element.
+    </audio>
+            <p>hope you like this <br> <b>I love you so so so..... much!❤️😘</b></p>
+        </div>
+        
+        <div class="carousel">
+            <!-- Replace these with your actual photo URLs -->
+            <img src="./471e71cd-870e-4155-a5fb-239442d23f3c.jpg" alt="Photo 1" class="active">
+            <img src="./4d31092f-91cf-41a5-ad20-f519677174b1.jpg" alt="Photo 2">
+            <img src="./4e4a9f53-d979-48cc-8508-068a3c4ab29f.jpg" alt="Photo 3">
+            <img src="./7c0c0fc6-ccc9-4f8e-aeff-a3e497c921c1.jpg" alt="Photo 4">
+        </div>
+        
+        <div class="hearts">
+            <!-- Floating hearts -->
+            <div class="heart" style="left: 10%; animation-duration: 4s;">💖</div>
+            <div class="heart" style="left: 20%; animation-duration: 5s;">❤️</div>
+            <div class="heart" style="left: 30%; animation-duration: 3s;">💕</div>
+            <div class="heart" style="left: 40%; animation-duration: 6s;">💗</div>
+            <div class="heart" style="left: 50%; animation-duration: 4.5s;">💓</div>
+            <div class="heart" style="left: 60%; animation-duration: 5.5s;">💞</div>
+            <div class="heart" style="left: 70%; animation-duration: 3.5s;">💘</div>
+            <div class="heart" style="left: 80%; animation-duration: 4.2s;">💝</div>
+            <div class="heart" style="left: 90%; animation-duration: 5.8s;">💟</div>
+        </div>
+        
+        <div class="gifs">
+            <!-- Replace with actual kissing GIF URLs (e.g., from Giphy or free sources) -->
+            <img src="./flying-kiss-smooch.gif" alt="Kissing GIF 1">
+            <img src="./hug.gif" alt="Kissing GIF 2">
+            <img src="./flying-kiss-smooch.gif" alt="Kissing GIF 3">
+        </div>
+        
+        <div class="footer">
+            <p>Forever yours, with all my heart. 😘</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple carousel script (optional, for auto-sliding)
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel img');
+        setInterval(() => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }, 3000); // Change image every 3 seconds
+    </script>
+</body>
+</html>
